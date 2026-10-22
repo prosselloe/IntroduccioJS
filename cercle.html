@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+Fes una funció a la que li passis el radi d'un cercle i retorni la longitud i l’àrea del mateix. 
+Mostra per pantalla el resultat.
+-->
+<html>
+    <head>
+        <title>Número dins interval</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>  
+        function cercle() {
+            var r = document.getElementById("radi").value;
+            var longitud = 2 * Math.PI * r;
+            var area = Math.PI * r ** 2;
+            alert("La longitud és: " + longitud + ", i l'àrea és: " + area);            
+        }
+        </script>        
+    </head>
+    <body>
+        <form action="/action_page.php">
+          <label for="radi">Radi del cercle: </label>
+          <input type="number" id="radi" name="radi"><br>
+          <input type="button" onclick="cercle()" value="Resultat">
+        </form>
+    </body>
+</html>
